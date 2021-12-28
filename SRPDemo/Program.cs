@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SRPDemo.Data;
+using System;
 
 namespace SRPDemo
 {
@@ -6,7 +7,6 @@ namespace SRPDemo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
         }
     }
 }
