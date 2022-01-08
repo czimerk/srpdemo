@@ -1,4 +1,5 @@
 ﻿using SRPDemo.Data;
+using SRPDemo.Domain;
 using System;
 
 namespace SRPDemo
@@ -7,6 +8,14 @@ namespace SRPDemo
     {
         static void Main(string[] args)
         {
+            var item = new Item()
+            {
+                Id = Guid.NewGuid(),
+                Name = "Fütykös",
+                Description = "Fegyelmező eszk.",
+                //...
+            };
+
         }
     }
 }

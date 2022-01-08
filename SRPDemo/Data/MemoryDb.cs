@@ -19,12 +19,8 @@ namespace SRPDemo.Data
             Seed();
         }
 
-        private void Seed()
-        {
-
-        }
-
-        private static readonly Lazy<MemoryDb> lazy = new Lazy<MemoryDb>(() => new MemoryDb());
+        private static readonly Lazy<MemoryDb> lazy 
+            = new Lazy<MemoryDb>(() => new MemoryDb());
         public static MemoryDb Instance
         {
             get
@@ -32,5 +28,12 @@ namespace SRPDemo.Data
                 return lazy.Value;
             }
         }
+
+
+        private void Seed()
+        {
+
+        }
+
     }
 }
